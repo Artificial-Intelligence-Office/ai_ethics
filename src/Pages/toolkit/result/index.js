@@ -2,6 +2,35 @@
 
 export default function Result(props) {
 
+    function getColor(text){
+        const green = [
+            "Very narrow",
+            "Limited/Narrow",
+            "Very low",
+            "Low",
+            "Accessable"
+        ]
+        const yellow = [
+            "Substantial",
+            "Moderate",
+            "Medium",
+            "Some concerns",
+            "Significant"
+        ]
+        const red = [
+            "Broad/wide Ranging",
+            "High",
+            "Extreme",
+            "Major concerns"
+        ]
+
+        if (green.includes(text)) return "green";
+        if (yellow.includes(text)) return "yellow";
+        if (red.includes(text)) return "red";
+
+        return "slate"
+    }
+
     return (
         <div className="overflow-hidden bg-white sm:rounded-lg">
 
@@ -12,15 +41,19 @@ export default function Result(props) {
                 <div class="max-w-screen-xl px-4 py-8 mx-auto text-center lg:py-16 lg:px-6">
                     <dl class="grid max-w-screen-md gap-8 mx-auto text-gray-900 sm:grid-cols-3 dark:text-white">
                         <div class="flex flex-col items-center justify-center">
-                            <dt class="mb-2 text-3xl md:text-4xl font-extrabold">{props.result.part1['Overall Impact Risk'].result}</dt>
+                            <dt class="mb-2 text-3xl md:text-4xl font-extrabold">
+                            <span className={"text-" + getColor(props.result.part1['Overall Impact Risk'].result) + "-700"}>{props.result.part1['Overall Impact Risk'].result}</span></dt>
                             <dd class="font-light text-gray-500 dark:text-gray-400">Overall Impact Risk</dd>
                         </div>
                         <div class="flex flex-col items-center justify-center">
-                            <dt class="mb-2 text-3xl md:text-4xl font-extrabold">{props.result.part6['Overall Technical Bias Risk'].result}</dt>
+                            <dt class="mb-2 text-3xl md:text-4xl font-extrabold">
+                            <span className={"text-" + getColor(props.result.part6['Overall Technical Bias Risk'].result) + "-700"}>{props.result.part6['Overall Technical Bias Risk'].result}</span>
+                                </dt>
                             <dd class="font-light text-gray-500 dark:text-gray-400">Overall Technical Bias Risk</dd>
                         </div>
                         <div class="flex flex-col items-center justify-center">
-                            <dt class="mb-2 text-3xl md:text-4xl font-extrabold">{props.result.part6['Training Risk'].result}</dt>
+                            <dt class="mb-2 text-3xl md:text-4xl font-extrabold">
+                            <span className={"text-" + getColor(props.result.part6['Training Risk'].result) + "-700"}>{props.result.part6['Training Risk'].result}</span></dt>
                             <dd class="font-light text-gray-500 dark:text-gray-400">Training Risk </dd>
                         </div>
                     </dl>
