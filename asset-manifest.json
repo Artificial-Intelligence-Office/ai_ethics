@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/ai_ethics/static/css/main.de731ebd.css",
-    "main.js": "/ai_ethics/static/js/main.91012050.js",
+    "main.js": "/ai_ethics/static/js/main.9f32771e.js",
     "static/js/498.8ad328a7.chunk.js": "/ai_ethics/static/js/498.8ad328a7.chunk.js",
     "static/js/703.bc1c1755.chunk.js": "/ai_ethics/static/js/703.bc1c1755.chunk.js",
     "static/js/598.efcf4d5e.chunk.js": "/ai_ethics/static/js/598.efcf4d5e.chunk.js",
@@ -9,7 +9,7 @@
     "static/media/logo.jpeg": "/ai_ethics/static/media/logo.b5dd36161dedee5f8c95.jpeg",
     "index.html": "/ai_ethics/index.html",
     "main.de731ebd.css.map": "/ai_ethics/static/css/main.de731ebd.css.map",
-    "main.91012050.js.map": "/ai_ethics/static/js/main.91012050.js.map",
+    "main.9f32771e.js.map": "/ai_ethics/static/js/main.9f32771e.js.map",
     "498.8ad328a7.chunk.js.map": "/ai_ethics/static/js/498.8ad328a7.chunk.js.map",
     "703.bc1c1755.chunk.js.map": "/ai_ethics/static/js/703.bc1c1755.chunk.js.map",
     "598.efcf4d5e.chunk.js.map": "/ai_ethics/static/js/598.efcf4d5e.chunk.js.map",
@@ -17,6 +17,6 @@
   },
   "entrypoints": [
     "static/css/main.de731ebd.css",
-    "static/js/main.91012050.js"
+    "static/js/main.9f32771e.js"
   ]
 }
